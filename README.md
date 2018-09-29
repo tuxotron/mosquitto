@@ -34,8 +34,9 @@ log_dest file /mosquitto/log/mosquitto.log
 ```
 
 You also can create an user at runtime. To do so you have to provide the username and the password through the environment variables: MOSQUITTO_USER and MOSQUITTO_PASS respectively.
-
+```
 docker run -d --name mymosquitto -e MOSQUITTO_USER=myusername -e MOSQUITTO_PASS=mypass tuxotron/mosquitto
+```
 
 To verify the username has been created you can try to connect using the given credentials, or run the following command:
 ```
